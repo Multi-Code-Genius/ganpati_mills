@@ -178,7 +178,7 @@ const RFDPage = () => {
           <div className="row items-center justify-center">
             <div className="animate lg:col-6 mb-10 lg:mb-0">
               <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-8">
-                The Benefits of Ganpati Dyeing Mills' Ready for Dyeing Services
+                The Benefits of Ganpati Dyeing Mills&apos; Ready for Dyeing Services
               </h2>
 
               <div className="space-y-4 mb-8">
