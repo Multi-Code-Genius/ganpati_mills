@@ -73,14 +73,14 @@ const Contact = ({ data }) => {
         <div id="map-section" className="section py-0">
           <div className="w-full">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.0862699999995!2d72.8559088!3d21.1702401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e7777d81b21%3A0x7c4a8dffa7fe5d5a!2s249%2C%202%2C%20GIDC%20Pandesara%20Rd%2C%20behind%20Rachna%20Dyeing%2C%20Pandesara%2C%20Udhana%2C%20Surat%2C%20Gujarat%20394221!5e0!3m2!1sen!2sin!4v1704389108205!5m2!1sen!2sin"
+              src="https://www.google.com/maps?q=249,+2,+GIDC+Pandesara+Rd,+behind+Rachna+Dyeing,+Pandesara,+Udhana,+Surat,+Gujarat+394221&z=16&output=embed"
               width="100%"
               height="450"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            />
           </div>
         </div>
 
@@ -98,8 +98,8 @@ const Contact = ({ data }) => {
                     Ready to help you at Ganpati Dyeing Mills!
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-8">
-                    We're here to help and answer any questions you might
-                    have. Reach out to us for the best in dyeing and textile
+                    We're here to help and answer any questions you might have.
+                    Reach out to us for the best in dyeing and textile
                     solutions.
                   </p>
                 </div>
@@ -243,7 +243,7 @@ const Contact = ({ data }) => {
               </h3>
               <div className="flex justify-center">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/ganpatidyeingmills/#"
                   className="text-gray-600 hover:text-primary transition-colors p-2"
                 >
                   <svg
