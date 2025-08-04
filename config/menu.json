@@ -1,0 +1,53 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Fabric Quality",
+      "url": "/posts"
+    },
+    {
+      "name": "Services",
+      "url": "/services",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Digital Printing",
+          "url": "/services/digital-printing"
+        },
+        {
+          "name": "RFD",
+          "url": "/services/rfd"
+        },
+        {
+          "name": "Dyeing",
+          "url": "/services/dyeing"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "footer": [
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Terms & Conditions",
+      "url": "/terms-policy"
+    }
+  ]
+}

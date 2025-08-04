@@ -1,0 +1,58 @@
+{
+  "site": {
+    "title": "Ganpati Dyeing Mills",
+    "base_url": "/",
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.svg",
+    "logo_width": "240",
+    "logo_height": "34",
+    "logo_text": "Ganpati Dyeing Mills"
+  },
+
+  "settings": {
+    "pagination": 6,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "contact_form_action": "#",
+    "footer_content": "Leading Fabric Dyeing & Processing Solutions.\nThis website is operated by Ganpati Dyeing Mills. All rights reserved. By using this site, you agree to our terms and policies.",
+    "copyright": "©2025 Ganpati Dyeing Mills"
+  },
+
+  "contact_info": {
+    "phone": "+91 98765 43210",
+    "email": "info@ganpatidyeingmills.com",
+    "location": "2118 Thornridge Cir. Syracuse, Connecticut 35624"
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label": "Send a message",
+    "link": "https://themefisher.com/products/andromeda-light-nextjs"
+  },
+
+  "metadata": {
+    "meta_author": "Themefisher",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Andromeda-light Nextjs Blog Template"
+  },
+
+  "call_to_action": {
+    "enable": true,
+    "title": "Get Andromeda Now",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.",
+    "button": {
+      "label": "Download The Theme",
+      "link": "https://themefisher.com/products/andromeda-light-nextjs"
+    }
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template",
+    "settings": {}
+  }
+}
