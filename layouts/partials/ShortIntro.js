@@ -2,8 +2,11 @@
 
 import Circle from "@layouts/components/Circle";
 import { markdownify } from "@lib/utils/textConverter";
+import { useRouter } from "next/navigation";
 
 const ShortIntro = ({ intro }) => {
+  const router = useRouter();
+
   return (
     <section className="section pt-0 py-16 md:py-20">
       <div className="container-xl">
@@ -23,7 +26,10 @@ const ShortIntro = ({ intro }) => {
                 "p",
                 "mt-8 md:mt-10 text-gray-600 text-lg md:text-xl font-medium",
               )}
-              <button className="mt-8 inline-block bg-primary text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-primary-600 transition-colors duration-300">
+              <button
+                onClick={() => router.push("/services/digital-printing")}
+                className="mt-8 inline-block bg-primary text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-primary-600 transition-colors duration-300"
+              >
                 View Products ➔
               </button>
             </div>

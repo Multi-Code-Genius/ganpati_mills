@@ -42,12 +42,12 @@
       "url": "/about"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Our Services",
+        "url": "/services/digital-printing"
     },
     {
-      "name": "Terms & Conditions",
-      "url": "/terms-policy"
+      "name": "Contact Us",
+      "url": "/contact"
     }
   ]
 }

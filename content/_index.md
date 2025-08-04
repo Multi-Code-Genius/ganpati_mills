@@ -3,13 +3,13 @@ banner:
   title: "Leading Textile Dyeing & Digital Printing Services"
   subtitle: "Transform your fabrics with precision dyeing and cutting-edge digital printing technology"
   image: "/images/vectors/contact.png"
-  production_info: "Over 500+ fabric batches processed weekly with 99% client satisfaction"
+  production_info: "We manufacture 3-4 lakh meters of fabric per day"
   cta_primary:
-    label: "Get Started"
+    label: "Discover MOre"
     href: "/contact"
   cta_secondary:
-    label: "View Services"
-    href: "/services"
+    label: "View Febrics"
+    href: "/services/digital-printing"
   newsletter:
     placeholder: "Enter your email for updates"
 
