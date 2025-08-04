@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="mt-5">
               {email && <Link href={`mailto:${email}`}>{email}</Link>}
               {/* social icons */}
-              <Social source={social} className="social-icons mt-5" />
+              {/* <Social source={social} className="social-icons mt-5" /> */}
             </div>
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
@@ -55,7 +55,27 @@ const Footer = () => {
         </div>
         {/* copyright */}
         <div className=" py-6 text-center">
-          {markdownify(copyright, "p", "footer-copy-write")}
+          <p className="footer-copy-write">
+            {copyright.split('Multi Code Genius').map((part, index) => (
+              <span key={index}>
+                {index === 0 ? (
+                  part
+                ) : (
+                  <>
+                    <a 
+                      href="https://multicodegenius.com/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary hover:text-primary-600 hover:underline transition-colors duration-200"
+                    >
+                      Multi Code Genius
+                    </a>
+                    {part}
+                  </>
+                )}
+              </span>
+            ))}
+          </p>
         </div>
       </div>
     </footer>

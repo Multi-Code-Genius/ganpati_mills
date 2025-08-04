@@ -5,7 +5,7 @@ banner:
   image: "/images/vectors/contact.png"
   production_info: "We manufacture 3-4 lakh meters of fabric per day"
   cta_primary:
-    label: "Discover MOre"
+    label: "Discover More"
     href: "/contact"
   cta_secondary:
     label: "View Febrics"
@@ -37,9 +37,9 @@ intro:
   description: "Ganpati Dyeing Mills specializes in unstitched fabrics such as chiffon, crepe, georgette, jacquard, and net fabric. Our state-of-the-art machinery ensures premium quality production."
   image: "/images/vectors/fabrics.png"
   stats:
-    - number: "25"
+    - number: "25+"
       label: "Years of experience in textile manufacturing."
-    - number: "5000"
+    - number: "5000+"
       label: "Satisfied customers globally."
   
 brands:

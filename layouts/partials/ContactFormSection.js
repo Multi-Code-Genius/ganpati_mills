@@ -73,14 +73,15 @@ const ContactFormSection = () => {
                 placeholder="Describe your fabric dyeing needs"
               ></textarea>
             </div>
-            <div className="flex justify-between items-center mt-6">
-              <p className="text-xs text-gray-500">
+            <div className="mt-6">
+              <p className="text-xs text-gray-500 mb-4">
                 We value your privacy. Your information is secure with us.
               </p>
-              <button type="submit" className="btn btn-primary">
-                <span className="mdi mdi-email-outline mr-2"></span> Submit
-                Inquiry
-              </button>
+              <div className="flex flex-col sm:flex-row sm:justify-end">
+                <button type="submit" className="btn btn-primary w-full sm:w-auto px-6 py-3 text-center whitespace-nowrap">
+                  <span className="mdi mdi-email-outline mr-2"></span>Submit Inquiry
+                </button>
+              </div>
             </div>
           </form>
         </div>

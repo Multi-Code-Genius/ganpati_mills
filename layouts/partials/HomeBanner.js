@@ -18,31 +18,31 @@ const HomeBanner = ({ banner: bannerData }) => {
       tl.fromTo(
         ".banner-title",
         { y: 20, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, delay: 0.5 }
+        { y: 0, opacity: 1, duration: 0.5, delay: 0.5 },
       )
         .fromTo(
           ".banner-subtitle",
           { y: 20, opacity: 0 },
           { y: 0, opacity: 1, duration: 0.5 },
-          ">-0.3"
+          ">-0.3",
         )
         .fromTo(
           ".banner-production-info",
           { y: 20, opacity: 0 },
           { y: 0, opacity: 1, duration: 0.5 },
-          ">-0.3"
+          ">-0.3",
         )
         .fromTo(
           ".banner-btn-group",
           { y: 20, opacity: 0 },
           { y: 0, opacity: 1, duration: 0.5 },
-          ">-0.3"
+          ">-0.3",
         )
         .fromTo(
           ".newsletter",
           { y: 20, opacity: 0 },
           { y: 0, opacity: 1, duration: 0.5 },
-          ">-0.3"
+          ">-0.3",
         );
 
       //parallax banner
@@ -64,7 +64,7 @@ const HomeBanner = ({ banner: bannerData }) => {
           },
           {
             y: -position,
-          }
+          },
         )
         .fromTo(
           bannerContent,
@@ -74,7 +74,7 @@ const HomeBanner = ({ banner: bannerData }) => {
           {
             y: position,
           },
-          "<"
+          "<",
         )
         .fromTo(
           ".banner-bg .circle",
@@ -84,7 +84,7 @@ const HomeBanner = ({ banner: bannerData }) => {
           {
             y: position,
           },
-          "<"
+          "<",
         );
     });
 
@@ -156,19 +156,21 @@ const HomeBanner = ({ banner: bannerData }) => {
             <div className="col-12">
               <div className="row relative justify-center">
                 <div className="banner-content col-12 md:col-10 lg:col-8 xl:col-6 py-16 md:py-20 text-center mx-auto px-4 md:px-6">
-{markdownify(
+                  {markdownify(
                     bannerData.title,
                     "h1",
-                    "mb-6 banner-title opacity-0"
+                    "mb-6 banner-title opacity-0",
                   )}
                   {markdownify(
                     bannerData.subtitle,
                     "p",
-                    "mb-10 banner-subtitle opacity-0 text-xl font-medium text-gray-700"
+                    "mb-10 banner-subtitle opacity-0 text-xl font-medium text-gray-700",
                   )}
                   <div className="banner-production-info opacity-0 mb-8">
                     <div className="bg-orange-100 text-orange-800 px-6 py-3 rounded-full inline-block shadow-sm">
-                      <span className="font-semibold text-sm">{bannerData.production_info}</span>
+                      <span className="font-semibold text-sm">
+                        {bannerData.production_info}
+                      </span>
                     </div>
                   </div>
                   <div className="banner-btn-group opacity-0 flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">

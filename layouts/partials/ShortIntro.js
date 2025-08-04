@@ -2,6 +2,7 @@
 
 import Circle from "@layouts/components/Circle";
 import { markdownify } from "@lib/utils/textConverter";
+import Counter from "@components/Counter";
 import { useRouter } from "next/navigation";
 
 const ShortIntro = ({ intro }) => {
@@ -28,7 +29,7 @@ const ShortIntro = ({ intro }) => {
               )}
               <button
                 onClick={() => router.push("/services/digital-printing")}
-                className="mt-8 inline-block bg-primary text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-primary-600 transition-colors duration-300"
+                className="mt-8 cursor-pointer inline-block bg-primary text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-primary-600 transition-colors duration-300"
               >
                 View Products ➔
               </button>
@@ -43,7 +44,7 @@ const ShortIntro = ({ intro }) => {
                     className="text-center bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100 hover:shadow-xl transition-all duration-300"
                   >
                     <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4">
-                      {stat.number}
+                      <Counter end={stat.number} duration={2000} />
                     </div>
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                       {stat.label}

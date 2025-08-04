@@ -87,9 +87,9 @@ const Contact = ({ data }) => {
         {/* Main Contact Section */}
         <div className="section bg-white py-16">
           <div className="container">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
               {/* Left Side - Contact Information */}
-              <div className="bg-white rounded-xl p-8 shadow-lg">
+              <div className="bg-white rounded-xl p-8 shadow-lg flex flex-col h-full">
                 <div className="mb-8">
                   <p className="text-primary font-semibold text-sm uppercase tracking-wide mb-3">
                     LET'S WORK TOGETHER
@@ -159,7 +159,7 @@ const Contact = ({ data }) => {
               </div>
 
               {/* Right Side - Contact Form */}
-              <div className="bg-white rounded-xl p-8 shadow-lg">
+              <div className="bg-white rounded-xl p-8 shadow-lg flex flex-col h-full">
                 <h2 className="text-2xl lg:text-3xl font-bold text-dark mb-8">
                   Looking for any help at Ganpati Dyeing Mills?
                 </h2>
@@ -212,7 +212,7 @@ const Contact = ({ data }) => {
                       className="w-full border-0 border-b-2 border-gray-200 rounded-none px-0 py-3 focus:border-primary focus:ring-0 bg-transparent resize-none text-dark placeholder-gray-400"
                       name="message"
                       placeholder="Describe about your project"
-                      rows="4"
+                      rows="2"
                     />
                   </div>
 
@@ -235,7 +235,7 @@ const Contact = ({ data }) => {
         </div>
 
         {/* Social Media Section */}
-        <div className="section bg-gray-50 py-12">
+        {/* <div className="section bg-gray-50 py-12">
           <div className="container">
             <div className="text-center">
               <h3 className="text-xl font-semibold text-dark mb-4">
@@ -257,7 +257,7 @@ const Contact = ({ data }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );
