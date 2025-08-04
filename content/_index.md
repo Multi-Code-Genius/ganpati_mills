@@ -32,10 +32,15 @@ features:
 
 intro:
   enable: true
-  title: "About Ganpati Dyeing Mills"
-  subtitle: "Excellence in Textile Processing"
-  description: "With decades of experience in textile dyeing and printing, we provide comprehensive solutions for businesses of all sizes. Our state-of-the-art facilities and expert team ensure consistent quality and timely delivery."
-  image: "/images/vectors/contact.png"
+  title: "Delivering Excellence in Fabric Manufacturing"
+  subtitle: "Providing high-quality fabrics across the globe."
+  description: "Ganpati Dyeing Mills specializes in unstitched fabrics such as chiffon, crepe, georgette, jacquard, and net fabric. Our state-of-the-art machinery ensures premium quality production."
+  image: "/images/vectors/fabrics.png"
+  stats:
+    - number: "25"
+      label: "Years of experience in textile manufacturing."
+    - number: "5000"
+      label: "Satisfied customers globally."
   
 brands:
   enable: false

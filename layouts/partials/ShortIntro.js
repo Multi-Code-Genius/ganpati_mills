@@ -14,15 +14,18 @@ const ShortIntro = ({ intro }) => {
                 {intro.subtitle}
               </p>
               {markdownify(
-                intro.title,
-                "h2",
-                "mt-4 section-title text-3xl md:text-4xl lg:text-5xl",
+                "Delivering Excellence in Fabric Manufacturing",
+                "h1",
+                "mt-4 section-title text-5xl md:text-6xl lg:text-7xl font-bold",
               )}
               {markdownify(
-                intro.description,
+                "Providing high-quality fabrics across the globe.",
                 "p",
-                "mt-8 md:mt-10 text-gray-600 text-base md:text-lg leading-relaxed",
+                "mt-8 md:mt-10 text-gray-600 text-lg md:text-xl font-medium",
               )}
+              <button className="mt-8 inline-block bg-primary text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-primary-600 transition-colors duration-300">
+                View Products ➔
+              </button>
             </div>
 
             {/* Stats Section */}
