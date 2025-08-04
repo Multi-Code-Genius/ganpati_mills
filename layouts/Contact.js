@@ -1,5 +1,4 @@
 import config from "@config/config.json";
-import Banner from "./components/Banner";
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
@@ -9,60 +8,56 @@ const Contact = ({ data }) => {
   return (
     <>
       <section className="section pt-0">
-        {/* <Banner title={title} /> */}
-
         {/* Locations Section */}
-        <div className="section bg-white py-12">
+        <div className="section bg-gray-50 py-16">
           <div className="container">
-            <div className="row items-start justify-center">
+            <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
               {/* Left Side - Info and CTA */}
-              <div className="animate lg:col-6 mb-10 lg:mb-0">
-                <div className="mb-8 lg:mb-0">
-                  <p className="text-primary font-semibold text-sm uppercase tracking-wide mb-3">
-                    GET IN TOUCH WITH GANPATI DYEING MILLS
-                  </p>
-                  <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-6">
-                    Call or visit us at one of our locations.
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed">
-                    Reach out to us today to discuss how we can assist with your
-                    dyeing and textile solutions. We are committed to delivering
-                    high-quality, eco-friendly dyeing services to enhance your
-                    business.
-                  </p>
-                  <button
-                    className="btn btn-primary mt-6 bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full transition-all duration-300"
-                    type="button"
-                  >
-                    🔔 Schedule a call
-                  </button>
-                </div>
+              <div className="lg:w-1/2">
+                <p className="text-primary font-semibold text-sm uppercase tracking-wide mb-3">
+                  GET IN TOUCH WITH GANPATI DYEING MILLS
+                </p>
+                <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-6">
+                  Call or visit us at one of our locations.
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-8">
+                  Reach out to us today to discuss how we can assist with your
+                  dyeing and textile solutions. We are committed to delivering
+                  high-quality, eco-friendly dyeing services to enhance your
+                  business.
+                </p>
+                <button
+                  className="btn btn-primary bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full transition-all duration-300"
+                  type="button"
+                >
+                  🔔 Schedule a call
+                </button>
               </div>
 
               {/* Right Side - Locations */}
-              <div className="animate lg:col-6">
+              <div className="lg:w-1/2">
                 <div className="space-y-6">
                   {["Pandesara", "Palsana"].map((location, index) => (
                     <div
                       key={"location-" + index}
-                      className="bg-white rounded-xl p-5 shadow-lg"
+                      className="bg-white rounded-xl p-6 shadow-lg"
                     >
                       <h4 className="text-lg font-semibold text-dark mb-2">
                         {location}
                       </h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
+                      <p className="text-gray-600 text-sm leading-relaxed mb-3">
                         249, 2, GIDC Pandesara Rd, behind Rachna Dyeing,
                         Pandesara, Udhana, Surat, Gujarat 394221
                       </p>
                       <a
-                        href="#"
-                        className="text-primary text-sm hover:underline mt-2 block"
+                        href="#map-section"
+                        className="text-primary text-sm hover:underline block mb-2"
                       >
                         View on map
                       </a>
                       <a
                         href="tel:+919824111765"
-                        className="text-dark font-medium hover:text-primary mt-4 block transition-colors"
+                        className="text-dark font-medium hover:text-primary transition-colors block"
                       >
                         +91 98241 11765
                       </a>
@@ -74,257 +69,173 @@ const Contact = ({ data }) => {
           </div>
         </div>
 
-        {/* Location Section */}
-        <div className="section bg-white py-16">
-          <div className="container">
-            <div className="text-center mb-12">
-              <p className="text-primary font-semibold text-sm uppercase tracking-wide mb-3">
-                FIND US
-              </p>
-              <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-4">
-                Visit Our Manufacturing Facility
-              </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Located in the heart of Surat's textile hub, our state-of-the-art facility
-                is equipped with modern machinery and expert craftsmanship.
-              </p>
-            </div>
-            
-            <div className="row items-center">
-              {/* Map */}
-              <div className="lg:col-8 mb-8 lg:mb-0">
-                <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.0862699999995!2d72.8559088!3d21.1702401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e7777d81b21%3A0x7c4a8dffa7fe5d5a!2s249%2C%202%2C%20GIDC%20Pandesara%20Rd%2C%20behind%20Rachna%20Dyeing%2C%20Pandesara%2C%20Udhana%2C%20Surat%2C%20Gujarat%20394221!5e0!3m2!1sen!2sin!4v1704389108205!5m2!1sen!2sin"
-                    width="100%"
-                    height="400"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
-              </div>
-              
-              {/* Location Info */}
-              <div className="lg:col-4">
-                <div className="bg-primary rounded-2xl p-8 text-white">
-                  <h3 className="text-xl font-bold mb-6">Ganpati Dyeing Mills</h3>
-                  
-                  <div className="space-y-4">
-                    <div className="flex items-start space-x-3">
-                      <svg className="w-5 h-5 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                      </svg>
-                      <div>
-                        <p className="font-medium">Address</p>
-                        <p className="text-sm opacity-90">
-                          249, 2, GIDC Pandesara Rd, behind Rachna Dyeing,<br />
-                          Pandesara, Udhana, Surat, Gujarat 394221
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start space-x-3">
-                      <svg className="w-5 h-5 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                      </svg>
-                      <div>
-                        <p className="font-medium">Phone</p>
-                        <a href="tel:+919824111765" className="text-sm opacity-90 hover:opacity-100">
-                          +91 98241 11765
-                        </a>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start space-x-3">
-                      <svg className="w-5 h-5 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                        <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                      </svg>
-                      <div>
-                        <p className="font-medium">Business Hours</p>
-                        <p className="text-sm opacity-90">
-                          Mon - Sat: 9:00 AM - 6:00 PM<br />
-                          Sunday: Closed
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="mt-6 pt-6 border-t border-white/20">
-                    <a 
-                      href="https://maps.google.com/?q=249,2,GIDC+Pandesara+Rd,behind+Rachna+Dyeing,Pandesara,Udhana,Surat,Gujarat+394221" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 bg-white text-primary px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors"
-                    >
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                      <span>Get Directions</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        {/* Map Section */}
+        <div id="map-section" className="section py-0">
+          <div className="w-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.0862699999995!2d72.8559088!3d21.1702401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e7777d81b21%3A0x7c4a8dffa7fe5d5a!2s249%2C%202%2C%20GIDC%20Pandesara%20Rd%2C%20behind%20Rachna%20Dyeing%2C%20Pandesara%2C%20Udhana%2C%20Surat%2C%20Gujarat%20394221!5e0!3m2!1sen!2sin!4v1704389108205!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
 
         {/* Main Contact Section */}
-        <div className="section bg-gray-50">
+        <div className="section bg-white py-16">
           <div className="container">
-            <div className="row items-start justify-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               {/* Left Side - Contact Information */}
-              <div className="animate lg:col-6 mb-10 lg:mb-0">
-                <div className="bg-white rounded-xl p-8 shadow-lg h-full">
-                  <div className="mb-8">
-                    <p className="text-primary font-semibold text-sm uppercase tracking-wide mb-3">
-                      LET'S WORK TOGETHER
-                    </p>
-                    <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-6">
-                      Ready to help you at Ganpati Dyeing Mills!
-                    </h2>
-                    <p className="text-gray-600 leading-relaxed mb-8">
-                      We're here to help and answer any questions you might
-                      have. Reach out to us for the best in dyeing and textile
-                      solutions.
-                    </p>
+              <div className="bg-white rounded-xl p-8 shadow-lg">
+                <div className="mb-8">
+                  <p className="text-primary font-semibold text-sm uppercase tracking-wide mb-3">
+                    LET'S WORK TOGETHER
+                  </p>
+                  <h2 className="text-2xl lg:text-3xl font-bold text-dark mb-6">
+                    Ready to help you at Ganpati Dyeing Mills!
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed mb-8">
+                    We're here to help and answer any questions you might
+                    have. Reach out to us for the best in dyeing and textile
+                    solutions.
+                  </p>
+                </div>
+
+                {/* Contact Details Grid */}
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-dark mb-2">
+                      Call us directly?
+                    </h4>
+                    <a
+                      href={`tel:${phone}`}
+                      className="text-dark font-medium hover:text-primary transition-colors"
+                    >
+                      {phone}
+                    </a>
                   </div>
 
-                  {/* Contact Details Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h4 className="font-semibold text-dark mb-2">
-                        Call us directly?
-                      </h4>
-                      <a
-                        href={`tel:${phone}`}
-                        className="text-dark font-medium hover:text-primary transition-colors"
-                      >
-                        {phone}
-                      </a>
-                    </div>
+                  <div>
+                    <h4 className="font-semibold text-dark mb-2">
+                      Need live support?
+                    </h4>
+                    <a
+                      href={`mailto:${email}`}
+                      className="text-dark font-medium hover:text-primary transition-colors"
+                    >
+                      {email}
+                    </a>
+                  </div>
 
-                    <div>
-                      <h4 className="font-semibold text-dark mb-2">
-                        Need live support?
-                      </h4>
-                      <a
-                        href={`mailto:${email}`}
-                        className="text-dark font-medium hover:text-primary transition-colors"
-                      >
-                        {email}
-                      </a>
-                    </div>
+                  <div>
+                    <h4 className="font-semibold text-dark mb-2">
+                      Join the growing team?
+                    </h4>
+                    <a
+                      href="mailto:careers@ganpatidyeingmills.com"
+                      className="text-dark font-medium hover:text-primary transition-colors"
+                    >
+                      careers@ganpatidyeingmills.com
+                    </a>
+                  </div>
 
-                    <div>
-                      <h4 className="font-semibold text-dark mb-2">
-                        Join the growing team?
-                      </h4>
-                      <a
-                        href="mailto:careers@ganpatidyeingmills.com"
-                        className="text-dark font-medium hover:text-primary transition-colors"
-                      >
-                        careers@ganpatidyeingmills.com
-                      </a>
-                    </div>
-
-                    <div>
-                      <h4 className="font-semibold text-dark mb-2">
-                        Visit our headquarters?
-                      </h4>
-                      <a
-                        href="#"
-                        className="text-primary font-medium hover:underline"
-                      >
-                        View on Google Map
-                      </a>
-                    </div>
+                  <div>
+                    <h4 className="font-semibold text-dark mb-2">
+                      Visit our headquarters?
+                    </h4>
+                    <a
+                      href="https://maps.google.com/?q=249,2,GIDC+Pandesara+Rd,behind+Rachna+Dyeing,Pandesara,Udhana,Surat,Gujarat+394221"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary font-medium hover:underline"
+                    >
+                      View on Google Map
+                    </a>
                   </div>
                 </div>
               </div>
 
               {/* Right Side - Contact Form */}
-              <div className="animate lg:col-6">
-                <div className="bg-white rounded-xl p-8 shadow-lg">
-                  <h2 className="text-2xl lg:text-3xl font-bold text-dark mb-8">
-                    Looking for any help at Ganpati Dyeing Mills?
-                  </h2>
+              <div className="bg-white rounded-xl p-8 shadow-lg">
+                <h2 className="text-2xl lg:text-3xl font-bold text-dark mb-8">
+                  Looking for any help at Ganpati Dyeing Mills?
+                </h2>
 
-                  <form
-                    method="POST"
-                    action={config.params.contact_form_action}
-                    className="space-y-6"
-                  >
-                    <div>
-                      <label
-                        className="block text-sm font-medium text-dark mb-2"
-                        htmlFor="name"
-                      >
-                        ENTER YOUR NAME <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        className="form-input w-full border-0 border-b-2 border-gray-200 rounded-none px-0 py-3 focus:border-primary focus:ring-0 bg-transparent"
-                        name="name"
-                        placeholder="What's your good name"
-                        type="text"
-                        required
-                      />
-                    </div>
+                <form
+                  method="POST"
+                  action={config.params?.contact_form_action || "#"}
+                  className="space-y-6"
+                >
+                  <div>
+                    <label
+                      className="block text-sm font-medium text-dark mb-2"
+                      htmlFor="name"
+                    >
+                      FULL NAME <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      className="w-full border-0 border-b-2 border-gray-200 rounded-none px-0 py-3 focus:border-primary focus:ring-0 bg-transparent text-dark placeholder-gray-400"
+                      name="name"
+                      placeholder="What's your good name"
+                      type="text"
+                      required
+                    />
+                  </div>
 
-                    <div>
-                      <label
-                        className="block text-sm font-medium text-dark mb-2"
-                        htmlFor="email"
-                      >
-                        EMAIL ADDRESS <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        className="form-input w-full border-0 border-b-2 border-gray-200 rounded-none px-0 py-3 focus:border-primary focus:ring-0 bg-transparent"
-                        name="email"
-                        placeholder="Enter your email address"
-                        type="email"
-                        required
-                      />
-                    </div>
+                  <div>
+                    <label
+                      className="block text-sm font-medium text-dark mb-2"
+                      htmlFor="email"
+                    >
+                      EMAIL ADDRESS <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      className="w-full border-0 border-b-2 border-gray-200 rounded-none px-0 py-3 focus:border-primary focus:ring-0 bg-transparent text-dark placeholder-gray-400"
+                      name="email"
+                      placeholder="Enter your email address"
+                      type="email"
+                      required
+                    />
+                  </div>
 
-                    <div>
-                      <label
-                        className="block text-sm font-medium text-dark mb-2"
-                        htmlFor="message"
-                      >
-                        YOUR MESSAGE
-                      </label>
-                      <textarea
-                        className="form-textarea w-full border-0 border-b-2 border-gray-200 rounded-none px-0 py-3 focus:border-primary focus:ring-0 bg-transparent resize-none"
-                        name="message"
-                        placeholder="Describe about your project"
-                        rows="4"
-                      />
-                    </div>
+                  <div>
+                    <label
+                      className="block text-sm font-medium text-dark mb-2"
+                      htmlFor="message"
+                    >
+                      YOUR MESSAGE
+                    </label>
+                    <textarea
+                      className="w-full border-0 border-b-2 border-gray-200 rounded-none px-0 py-3 focus:border-primary focus:ring-0 bg-transparent resize-none text-dark placeholder-gray-400"
+                      name="message"
+                      placeholder="Describe about your project"
+                      rows="4"
+                    />
+                  </div>
 
-                    <div className="pt-4">
-                      <p className="text-xs text-gray-500 mb-6">
-                        We will never collect information about you without your
-                        explicit consent.
-                      </p>
-                      <button
-                        type="submit"
-                        className="btn btn-primary bg-dark hover:bg-primary text-white px-8 py-3 rounded-full transition-all duration-300"
-                      >
-                        Send message
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                  <div className="pt-4">
+                    <p className="text-xs text-gray-500 mb-6">
+                      We will never collect information about you without your
+                      explicit consent.
+                    </p>
+                    <button
+                      type="submit"
+                      className="w-full sm:w-auto btn btn-primary bg-dark hover:bg-primary text-white px-8 py-3 rounded-full transition-all duration-300"
+                    >
+                      Send message
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
 
         {/* Social Media Section */}
-        <div className="section py-12">
+        <div className="section bg-gray-50 py-12">
           <div className="container">
             <div className="text-center">
               <h3 className="text-xl font-semibold text-dark mb-4">

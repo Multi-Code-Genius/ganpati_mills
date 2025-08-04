@@ -2,6 +2,7 @@
 title: "Contact Us"
 description: "Get in touch with Ganpati Dyeing Mills for all your textile dyeing and printing needs"
 date: 2024-01-01
+layout: "contact"
 ---
 
 # Contact Ganpati Dyeing Mills

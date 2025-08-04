@@ -14,7 +14,7 @@ about_us:
     - "Integrated processes for large-scale and custom jobs."
   button:
     label: "Explore services"
-    link: "/services"
+    link:  "/services/digital-printing"
   phone: "+91 98241 11765"
 
 why_choose:
