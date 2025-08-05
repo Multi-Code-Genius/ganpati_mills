@@ -21,8 +21,59 @@
 
 .navbar-brand {
   @apply text-xl font-semibold text-dark;
-  image {
-    @apply max-h-full max-w-full;
+  img {
+    @apply h-auto max-w-full object-contain;
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 480px) {
+    img {
+      max-width: 120px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    img {
+      max-width: 150px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    img {
+      max-width: 240px;
+    }
+  }
+}
+
+.responsive-logo {
+  @apply flex items-center;
+  
+  img {
+    @apply block;
+  }
+  
+  // Extra small devices (phones, 320px and up)
+  @media (max-width: 320px) {
+    img {
+      max-width: 100px !important;
+      max-height: 28px !important;
+    }
+  }
+  
+  // Small devices (landscape phones, 480px and up)
+  @media (max-width: 480px) {
+    img {
+      max-width: 120px !important;
+      max-height: 30px !important;
+    }
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (max-width: 768px) {
+    img {
+      max-width: 150px !important;
+      max-height: 32px !important;
+    }
   }
 }
 

@@ -7,7 +7,7 @@ const Logo = ({ src }) => {
   const { logo, logo_width, logo_height, logo_text, title } = config.site;
 
   return (
-    <Link href="/" className="navbar-brand block">
+    <Link href="/" className="navbar-brand block responsive-logo">
       {src || logo ? (
         <ImageFallback
           width={logo_width.replace("px", "") * 2}
@@ -16,8 +16,10 @@ const Logo = ({ src }) => {
           alt={title}
           priority
           style={{
-            height: logo_height.replace("px", "") + "px",
-            width: logo_width.replace("px", "") + "px",
+            height: "auto",
+            width: "100%",
+            maxHeight: logo_height.replace("px", "") + "px",
+            maxWidth: "240px",
           }}
         />
       ) : logo_text ? (

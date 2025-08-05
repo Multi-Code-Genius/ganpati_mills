@@ -225,6 +225,42 @@
   }
 }
 
+// ShortIntro responsive styles
+.section {
+  // Mobile first responsive padding
+  @media (max-width: 640px) {
+    @apply py-8;
+  }
+  
+  @media (min-width: 641px) and (max-width: 768px) {
+    @apply py-12;
+  }
+  
+  @media (min-width: 769px) {
+    @apply py-16;
+  }
+}
+
+// Service page CTA buttons responsive styles
+.btn {
+  @apply transition-all duration-300 ease-in-out;
+  
+  // Ensure buttons don't break on very small screens
+  @media (max-width: 360px) {
+    @apply text-xs px-3 py-2;
+  }
+  
+  // Handle text overflow gracefully
+  &.btn-primary, &.btn-outline {
+    @apply whitespace-nowrap overflow-hidden text-ellipsis;
+    
+    @media (max-width: 480px) {
+      max-width: 100%;
+      min-width: 0;
+    }
+  }
+}
+
 @keyframes shadowPulse {
   0% {
     box-shadow: 0 0 0 0 rgba(254, 96, 25, 0.6);

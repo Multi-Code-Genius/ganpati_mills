@@ -19,6 +19,11 @@ const Header = () => {
   const pathname = usePathname();
   const asPath = pathname;
 
+  // Function to close mobile menu
+  const closeMobileMenu = () => {
+    setShowMenu(false);
+  };
+
   //sticky header
   useEffect(() => {
     const header = headerRef.current;
@@ -35,6 +40,11 @@ const Header = () => {
       }
     });
   }, []);
+
+  // Close mobile menu when pathname changes (route navigation)
+  useEffect(() => {
+    closeMobileMenu();
+  }, [pathname]);
 
   // logo source
   const { logo } = config.site;

@@ -72,32 +72,33 @@ const DigitalPrintingPage = () => {
           <div className="row items-center justify-center">
             <div className="animate lg:col-6 mb-10 lg:mb-0">
               <div className="relative">
-                <div className="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-medium inline-block mb-4">
+                <div className="bg-red-500 text-white px-3 py-2 rounded-full text-xs sm:text-sm font-medium inline-block mb-4">
                   DIGITAL PRINTING SERVICES
                 </div>
-                <h1 className="text-4xl lg:text-5xl font-bold text-dark mb-6">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-dark mb-4 sm:mb-6">
                   Precision meets creativity in textile printing.
                 </h1>
-                <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-8">
                   From fashion apparel to home furnishings, our digital printing
                   service offers unmatched color accuracy, design flexibility,
                   and eco-friendly production techniques—tailored to meet
                   high-demand bulk orders with consistent quality.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <button className="btn btn-primary bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-full">
-                    Over 500+ vibrant patterns printed weekly.
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                  <button className="btn btn-primary bg-red-500 hover:bg-red-600 text-white px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm md:text-base whitespace-nowrap overflow-hidden text-ellipsis max-w-full">
+                    <span className="block sm:hidden">500+ patterns weekly</span>
+                    <span className="hidden sm:block">Over 500+ vibrant patterns printed weekly.</span>
                   </button>
                 </div>
               </div>
             </div>
             <div className="animate lg:col-6">
-              <div className="relative p-4">
-                <div className="bg-gray-100 rounded-2xl p-8 text-center">
-                  <div className="w-full h-64 bg-gradient-to-br from-red-100 to-red-50 rounded-xl flex items-center justify-center">
-                    <span className="text-6xl">🎨</span>
+              <div className="relative p-2 sm:p-4">
+                <div className="bg-gray-100 rounded-2xl p-4 sm:p-8 text-center">
+                  <div className="w-full h-48 sm:h-64 bg-gradient-to-br from-red-100 to-red-50 rounded-xl flex items-center justify-center">
+                    <span className="text-4xl sm:text-5xl lg:text-6xl">🎨</span>
                   </div>
-                  <p className="text-gray-500 mt-4">Digital Printing Sample</p>
+                  <p className="text-gray-500 mt-2 sm:mt-4 text-xs sm:text-sm">Digital Printing Sample</p>
                 </div>
               </div>
             </div>
@@ -108,22 +109,22 @@ const DigitalPrintingPage = () => {
       {/* Services Overview Section */}
       <section className="section bg-green-50">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-dark mb-4">
               How Ganpati Dyeing Mills supports your textile business?
             </h2>
           </div>
 
           {/* Service Cards */}
-          <div className="row justify-center mb-16">
+          <div className="row justify-center mb-12 sm:mb-16">
             {services.map((service, index) => (
-              <div key={index} className="md:col-6 lg:col-3 mb-8">
-                <div className="bg-white rounded-xl p-6 shadow-lg h-full text-center">
-                  <div className="text-4xl mb-4">{service.icon}</div>
-                  <h4 className="text-lg font-semibold text-dark mb-3">
+              <div key={index} className="sm:col-6 lg:col-3 mb-6 sm:mb-8">
+                <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg h-full text-center">
+                  <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">{service.icon}</div>
+                  <h4 className="text-base sm:text-lg font-semibold text-dark mb-2 sm:mb-3">
                     {service.title}
                   </h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                     {service.description}
                   </p>
                 </div>
@@ -134,32 +135,32 @@ const DigitalPrintingPage = () => {
           {/* Stats */}
           <div className="row justify-center">
             <div className="lg:col-10">
-              <div className="bg-white rounded-xl p-8 shadow-lg">
+              <div className="bg-white rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
                 <div className="row text-center">
-                  <div className="md:col-4 mb-6 md:mb-0">
-                    <div className="text-4xl font-bold text-primary mb-2">
+                  <div className="sm:col-4 mb-4 sm:mb-0">
+                    <div className="text-3xl sm:text-4xl font-bold text-primary mb-1 sm:mb-2">
                       4.9
                     </div>
-                    <p className="text-gray-600 text-sm">RATING</p>
-                    <p className="text-xs text-gray-500">
+                    <p className="text-gray-600 text-xs sm:text-sm">RATING</p>
+                    <p className="text-2xs sm:text-xs text-gray-500">
                       2,000+ trusted client reviews
                     </p>
                   </div>
-                  <div className="md:col-4 mb-6 md:mb-0">
-                    <div className="text-4xl font-bold text-primary mb-2">
+                  <div className="sm:col-4 mb-4 sm:mb-0">
+                    <div className="text-3xl sm:text-4xl font-bold text-primary mb-1 sm:mb-2">
                       97%
                     </div>
-                    <p className="text-gray-600 text-sm">CLIENT SATISFACTION</p>
-                    <p className="text-xs text-gray-500">
+                    <p className="text-gray-600 text-xs sm:text-sm">CLIENT SATISFACTION</p>
+                    <p className="text-2xs sm:text-xs text-gray-500">
                       Clients rate us as a key partner in production planning.
                     </p>
                   </div>
-                  <div className="md:col-4">
-                    <div className="text-4xl font-bold text-primary mb-2">
+                  <div className="sm:col-4">
+                    <div className="text-3xl sm:text-4xl font-bold text-primary mb-1 sm:mb-2">
                       250+
                     </div>
-                    <p className="text-gray-600 text-sm">COMPLETED PROJECTS</p>
-                    <p className="text-xs text-gray-500">
+                    <p className="text-gray-600 text-xs sm:text-sm">COMPLETED PROJECTS</p>
+                    <p className="text-2xs sm:text-xs text-gray-500">
                       Successful digital print projects each month.
                     </p>
                   </div>
@@ -174,16 +175,16 @@ const DigitalPrintingPage = () => {
       <section className="section bg-white">
         <div className="container">
           <div className="row items-center justify-center">
-            <div className="animate lg:col-6 mb-10 lg:mb-0">
-              <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-8">
+            <div className="animate lg:col-6 mb-6 sm:mb-10 lg:mb-0">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-dark mb-4 sm:mb-6 lg:mb-8">
                 Benefits of digital printing services.
               </h2>
 
-              <div className="space-y-4 mb-8">
+              <div className="space-y-2 sm:space-y-3 lg:space-y-4 mb-4 sm:mb-6 lg:mb-8">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start">
                     <svg
-                      className="mr-3 mt-1 h-5 w-5 text-green-500 flex-shrink-0"
+                      className="mr-2 sm:mr-3 mt-1 h-4 w-4 sm:h-5 sm:w-5 text-green-500 flex-shrink-0"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -193,25 +194,25 @@ const DigitalPrintingPage = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-lg text-gray-700">{benefit}</span>
+                    <span className="text-sm sm:text-base lg:text-lg text-gray-700">{benefit}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="flex gap-4">
-                <button className="btn btn-primary bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 lg:gap-4">
+                <button className="btn btn-primary bg-primary hover:bg-primary/90 text-white px-4 sm:px-5 lg:px-6 py-2 sm:py-2.5 lg:py-3 rounded-lg text-sm sm:text-base font-medium">
                   Request Quote
                 </button>
-                <button className="btn btn-outline border-2 border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg">
+                <button className="btn btn-outline border-2 border-gray-300 text-gray-700 hover:bg-gray-50 px-4 sm:px-5 lg:px-6 py-2 sm:py-2.5 lg:py-3 rounded-lg text-sm sm:text-base font-medium">
                   View Samples
                 </button>
               </div>
             </div>
 
             <div className="animate lg:col-6">
-              <div className="bg-gray-100 rounded-2xl p-8">
-                <div className="w-full h-80 bg-gradient-to-br from-green-100 to-blue-100 rounded-xl flex items-center justify-center">
-                  <span className="text-8xl">📱</span>
+              <div className="bg-gray-100 rounded-2xl p-4 sm:p-6 lg:p-8">
+                <div className="w-full h-48 sm:h-64 lg:h-80 bg-gradient-to-br from-green-100 to-blue-100 rounded-xl flex items-center justify-center">
+                  <span className="text-5xl sm:text-6xl lg:text-8xl">📱</span>
                 </div>
               </div>
             </div>
