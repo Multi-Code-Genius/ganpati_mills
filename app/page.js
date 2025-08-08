@@ -1,12 +1,9 @@
-import Cta from "@layouts/components/Cta";
 import GSAPWrapper from "@layouts/components/GSAPWrapper";
 import Features from "@layouts/partials/Features";
 import HomeBanner from "@layouts/partials/HomeBanner";
 import SeoMeta from "@layouts/partials/SeoMeta";
 import ShortIntro from "@layouts/partials/ShortIntro";
 import ContactFormSection from "@layouts/partials/ContactFormSection";
-import SpecialFeatures from "@layouts/partials/SpecialFeatures";
-import Testimonial from "@layouts/partials/Testimonial";
 import { getListPage } from "@lib/contentParser";
 
 const Home = async () => {

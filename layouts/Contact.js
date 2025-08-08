@@ -1,8 +1,6 @@
 import config from "@config/config.json";
 
 const Contact = ({ data }) => {
-  const { frontmatter } = data;
-  const { title } = frontmatter;
   const { email, phone } = config.contact_info;
 
   return (
