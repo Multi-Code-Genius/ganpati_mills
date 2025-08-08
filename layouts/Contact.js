@@ -149,7 +149,7 @@ const Contact = ({ data }) => {
                       Visit our headquarters?
                     </h4>
                     <a
-                      href="https://maps.google.com/?q=249,2,GIDC+Pandesara+Rd,behind+Rachna+Dyeing,Pandesara,Udhana,Surat,Gujarat+394221"
+                      href="https://maps.google.com/?q=Ganpati+Dyeing+Mills,+249/2,+Behind+Rachna+Dyeing,+GIDC,+Pandesara,+Surat,+Gujarat+394221"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary font-medium hover:underline"
