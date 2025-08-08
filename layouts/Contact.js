@@ -75,7 +75,7 @@ const Contact = ({ data }) => {
         <div id="map-section" className="section py-0">
           <div className="w-full">
             <iframe
-              src="https://www.google.com/maps?q=249,+2,+GIDC+Pandesara+Rd,+behind+Rachna+Dyeing,+Pandesara,+Udhana,+Surat,+Gujarat+394221&z=16&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.2319581465144!2d72.82938941098823!3d21.14316528375791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be051db4c353677%3A0x75e13a053294972e!2sGanpati%20Dyeing%20Mills!5e0!3m2!1sen!2sin!4v1745662945992!5m2!1sen!2sin"
               width="100%"
               height="450"
               style={{ border: 0 }}
