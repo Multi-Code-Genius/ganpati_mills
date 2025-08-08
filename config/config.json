@@ -17,7 +17,7 @@
 
   "params": {
     "tag_manager_id": "",
-    "contact_form_action": "#",
+    "contact_form_action": "/api/contact",
     "footer_content": "Leading Fabric Dyeing & Processing Solutions.\nThis website is operated by Ganpati Dyeing Mills. All rights reserved. By using this site, you agree to our terms and policies.",
     "copyright": "©2025 Ganpati Dyeing Mills | Developed by Multi Code Genius"
   },

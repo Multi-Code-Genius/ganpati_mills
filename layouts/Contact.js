@@ -1,7 +1,11 @@
+"use client";
+
 import config from "@config/config.json";
+import { useState } from "react";
 
 const Contact = ({ data }) => {
   const { email, phone } = config.contact_info;
+  const [loading, setLoading] = useState(false);
 
   return (
     <>
@@ -163,8 +167,41 @@ const Contact = ({ data }) => {
                 </h2>
 
                 <form
-                  method="POST"
-                  action={config.params?.contact_form_action || "#"}
+                  onSubmit={async (e) => {
+                    e.preventDefault();
+                    setLoading(true);
+                    const formData = new FormData(e.target);
+                    const data = Object.fromEntries(formData.entries());
+
+                    try {
+                      const response = await fetch(
+                        config.params?.contact_form_action || "#",
+                        {
+                          method: "POST",
+                          headers: {
+                            "Content-Type": "application/json",
+                          },
+                          body: JSON.stringify(data),
+                        },
+                      );
+
+                      const result = await response.json();
+
+                      if (response.ok) {
+                        console.log("Success:", result.message);
+                        e.target.reset();
+                      } else {
+                        console.error(
+                          "Error:",
+                          result.message || "An error occurred.",
+                        );
+                      }
+                    } catch (error) {
+                      console.error("Error submitting form:", error);
+                    } finally {
+                      setLoading(false);
+                    }
+                  }}
                   className="space-y-6"
                 >
                   <div>
@@ -180,6 +217,7 @@ const Contact = ({ data }) => {
                       placeholder="What's your good name"
                       type="text"
                       required
+                      disabled={loading}
                     />
                   </div>
 
@@ -196,6 +234,7 @@ const Contact = ({ data }) => {
                       placeholder="Enter your email address"
                       type="email"
                       required
+                      disabled={loading}
                     />
                   </div>
 
@@ -211,6 +250,7 @@ const Contact = ({ data }) => {
                       name="message"
                       placeholder="Describe about your project"
                       rows="2"
+                      disabled={loading}
                     />
                   </div>
 
@@ -222,8 +262,35 @@ const Contact = ({ data }) => {
                     <button
                       type="submit"
                       className="w-full sm:w-auto btn btn-primary bg-dark hover:bg-primary text-white px-8 py-3 rounded-full transition-all duration-300"
+                      disabled={loading}
                     >
-                      Send message
+                      {loading ? (
+                        <span className="flex items-center">
+                          <svg
+                            className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              className="opacity-25"
+                              cx="12"
+                              cy="12"
+                              r="10"
+                              stroke="currentColor"
+                              strokeWidth="4"
+                            ></circle>
+                            <path
+                              className="opacity-75"
+                              fill="currentColor"
+                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                            ></path>
+                          </svg>
+                          Sending...
+                        </span>
+                      ) : (
+                        "Send message"
+                      )}
                     </button>
                   </div>
                 </form>
