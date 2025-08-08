@@ -96,7 +96,7 @@ const DigitalPrintingPage = () => {
               <div className="relative p-2 sm:p-4">
                 <div className="bg-gray-100 rounded-2xl p-4 sm:p-8 text-center">
                   <div className="w-full h-48 sm:h-64 bg-gradient-to-br from-red-100 to-red-50 rounded-xl flex items-center justify-center">
-                    <span className="text-4xl sm:text-5xl lg:text-6xl">🎨</span>
+                    <img src="/images/printing.jpeg" alt="Digital Printing" className="w-full h-full object-cover rounded-xl"/>
                   </div>
                   <p className="text-gray-500 mt-2 sm:mt-4 text-xs sm:text-sm">Digital Printing Sample</p>
                 </div>

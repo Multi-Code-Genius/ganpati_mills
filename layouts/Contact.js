@@ -39,7 +39,7 @@ const Contact = ({ data }) => {
               {/* Right Side - Locations */}
               <div className="lg:w-1/2">
                 <div className="space-y-6">
-                  {["Pandesara", "Palsana"].map((location, index) => (
+                  {["Pandesara"].map((location, index) => (
                     <div
                       key={"location-" + index}
                       className="bg-white rounded-xl p-6 shadow-lg"

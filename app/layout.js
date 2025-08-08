@@ -5,6 +5,7 @@ import theme from "@config/theme.json";
 import TwSizeIndicator from "@layouts/components/TwSizeIndicator";
 import Footer from "@layouts/partials/Footer";
 import Header from "@layouts/partials/Header";
+import Popup from "@layouts/components/Popup";
 import "../styles/style.scss";
 
 export default function RootLayout({ children }) {
@@ -58,6 +59,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <Popup />
       </body>
     </html>
   );

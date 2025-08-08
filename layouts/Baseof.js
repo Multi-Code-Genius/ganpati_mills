@@ -1,6 +1,7 @@
 import config from "@config/config.json";
 import { gsap } from "@lib/gsap";
 import { plainify } from "@lib/utils/textConverter";
+import Popup from "@layouts/components/Popup";
 import Footer from "@partials/Footer";
 import Header from "@partials/Header";
 import Head from "next/head";
@@ -85,7 +86,7 @@ const Base = ({
         {/* title */}
         <title>
           {plainify(
-            meta_title ? meta_title : title ? title : config.site.title
+            meta_title ? meta_title : title ? title : config.site.title,
           )}
         </title>
 
@@ -108,7 +109,7 @@ const Base = ({
         <meta
           property="og:title"
           content={plainify(
-            meta_title ? meta_title : title ? title : config.site.title
+            meta_title ? meta_title : title ? title : config.site.title,
           )}
         />
 
@@ -127,7 +128,7 @@ const Base = ({
         <meta
           name="twitter:title"
           content={plainify(
-            meta_title ? meta_title : title ? title : config.site.title
+            meta_title ? meta_title : title ? title : config.site.title,
           )}
         />
 
@@ -154,6 +155,7 @@ const Base = ({
       {/* main site */}
       <main ref={main}>{children}</main>
       <Footer />
+      <Popup />
     </>
   );
 };
