@@ -7,7 +7,7 @@ layout: "about"
 about_us:
   subtitle: "ABOUT GANPATI DYEING MILLS"
   title: "Crafting quality through innovation in dyeing & printing."
-  content: "Ganpati Dyeing Mills has been a trusted name in textile dyeing and printing solutions. We combine cutting-edge technology with unmatched craftsmanship, we specialize in fabric dyeing, digital printing, and color-fast treatments designed for both commercial and custom jobs."
+  content: "Established in 1998, Ganpati Dyeing Mills has been a trusted name in textile dyeing and printing solutions. With years of experience and advanced machineries, we combine cutting-edge technology with unmatched craftsmanship. We specialize in fabric dyeing, digital printing, and color-fast treatments designed for both commercial and custom jobs."
   image: "/images/vectors/contact.png"
   features:
     - "Eco-conscious practices with vibrant, lasting color results."

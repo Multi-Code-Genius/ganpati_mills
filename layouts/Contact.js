@@ -20,7 +20,7 @@ const Contact = ({ data }) => {
                   GET IN TOUCH WITH GANPATI DYEING MILLS
                 </p>
                 <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-6">
-                  Call or visit us at one of our locations.
+                  Call or visit us at our location.
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-8">
                   Reach out to us today to discuss how we can assist with your

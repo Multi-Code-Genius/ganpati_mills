@@ -8,7 +8,7 @@ banner:
     label: "Discover More"
     href: "/contact"
   cta_secondary:
-    label: "View Febrics"
+    label: "View Fabrics"
     href: "/services/digital-printing"
   newsletter:
     placeholder: "Enter your email for updates"
@@ -33,14 +33,14 @@ features:
 intro:
   enable: true
   title: "Delivering Excellence in Fabric Manufacturing"
-  subtitle: "Providing high-quality fabrics across the globe."
+  subtitle: "Providing high-quality fabrics across the India."
   description: "Ganpati Dyeing Mills specializes in unstitched fabrics such as chiffon, crepe, georgette, jacquard, and net fabric. Our state-of-the-art machinery ensures premium quality production."
   image: "/images/vectors/fabrics.png"
   stats:
     - number: "25+"
       label: "Years of experience in textile manufacturing."
-    - number: "5000+"
-      label: "Satisfied customers globally."
+    - number: "1000+"
+      label: "Satisfied customers across India."
   
 brands:
   enable: false

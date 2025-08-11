@@ -23,7 +23,7 @@ const ShortIntro = ({ intro }) => {
                 "mt-4 section-title text-3xl md:text-4xl lg:text-5xl font-bold",
               )}
               {markdownify(
-                "Providing high-quality fabrics across the globe.",
+                "Providing high-quality fabrics across India.",
                 "p",
                 "mt-4 md:mt-6 text-gray-600 text-sm md:text-base lg:text-lg font-medium",
               )}
